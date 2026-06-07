@@ -3,6 +3,11 @@ html {
   font-family: sans-serif;
 }
 
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -54,4 +59,26 @@ h1 {
 
 :has(.menu[aria-expanded="true"]) .nav-links {
   display: unset;
+}
+
+.dark .menu {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  color: #0d0950;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+.dark a {
+  color: #ff9776;
+}
+
+.dark header img {
+  filter: invert(1);
 }
